@@ -151,8 +151,10 @@ figcaption { margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.1
 .col-title { margin: 0; font-weight: 500; color: var(--ink); }
 .foot-cols a { display: block; margin-top: 0.5rem; color: var(--sand); text-decoration: none; }
 .foot-cols a:hover { color: var(--ink); }
-.legal { max-width: 72rem; margin: 0 auto; padding: 1rem 1rem; font-size: 0.75rem; color: var(--sand); border-top: 1px solid var(--line); }
-@media (min-width: 640px) { .legal { padding: 1rem 1.5rem; } }
+.legal { max-width: 72rem; margin: 0 auto; padding: 1rem 1rem 0.25rem; font-size: 0.75rem; color: var(--sand); border-top: 1px solid var(--line); }
+@media (min-width: 640px) { .legal { padding: 1rem 1.5rem 0.25rem; } }
+.hit-counter { max-width: 72rem; margin: 0 auto; padding: 0.5rem 1rem 1.25rem; text-align: left; }
+@media (min-width: 640px) { .hit-counter { padding: 0.5rem 1.5rem 1.25rem; } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
