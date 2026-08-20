@@ -9,7 +9,7 @@
         c.setAttribute("aria-selected", String(c === chip));
       });
       cards.forEach((card) => {
-        const show = filter === "all" || card.dataset.category === filter;
+        const show = filter === "all" || card.dataset.category === filter || (filter === "stock" && card.dataset.stock === "1");
         card.hidden = !show;
       });
     });
