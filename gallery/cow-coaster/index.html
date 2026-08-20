@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Star Baby Blanket · Jiji’s Crochet Shop</title>
-  <meta name="description" content="A six-point star throw in layered blues and cream.">
+  <title>Highland Cow Coaster · Jiji’s Crochet Shop</title>
+  <meta name="description" content="A shaggy round highland-cow coaster with fringe all the way around.">
   <meta name="theme-color" content="#F3EBE0">
-  <link rel="canonical" href="https://jijiscrochetshop.com/gallery/star-blanket/">
+  <link rel="canonical" href="https://jijiscrochetshop.com/gallery/cow-coaster/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Star Baby Blanket · Jiji’s Crochet Shop">
-  <meta property="og:description" content="A six-point star throw in layered blues and cream.">
-  <meta property="og:url" content="https://jijiscrochetshop.com/gallery/star-blanket/">
+  <meta property="og:title" content="Highland Cow Coaster · Jiji’s Crochet Shop">
+  <meta property="og:description" content="A shaggy round highland-cow coaster with fringe all the way around.">
+  <meta property="og:url" content="https://jijiscrochetshop.com/gallery/cow-coaster/">
   <meta property="og:image" content="https://jijiscrochetshop.com/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Star Baby Blanket · Jiji’s Crochet Shop">
-  <meta name="twitter:description" content="A six-point star throw in layered blues and cream.">
+  <meta name="twitter:title" content="Highland Cow Coaster · Jiji’s Crochet Shop">
+  <meta name="twitter:description" content="A shaggy round highland-cow coaster with fringe all the way around.">
   <meta name="twitter:image" content="https://jijiscrochetshop.com/og.jpg">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/favicon.svg">
@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <meta property="og:image" content="https://jijiscrochetshop.com/images/star-blanket.jpg">
+  <meta property="og:image" content="https://jijiscrochetshop.com/images/cow-coaster.jpg">
 </head>
 <body>
   <header class="site-header">
@@ -43,18 +43,21 @@
   <article class="piece">
     <div>
       <figure class="piece-photo">
-        <img id="main-photo" src="/images/star-blanket.jpg" alt="Star Baby Blanket" fetchpriority="high">
+        <img id="main-photo" src="/images/cow-coaster.jpg" alt="Highland Cow Coaster" fetchpriority="high">
       </figure>
-      
+      <div class="photo-strip" role="tablist" aria-label="Photos of Highland Cow Coaster">
+        <button type="button" class="photo-thumb active" data-full="/images/cow-coaster.jpg" aria-pressed="true"><img src="/images/thumbs/cow-coaster.jpg" alt=""></button>
+        <button type="button" class="photo-thumb" data-full="/images/cow-coaster-2.jpg" aria-pressed="false"><img src="/images/thumbs/cow-coaster-2.jpg" alt=""></button>
+      </div>
     </div>
     <div>
       <p class="eyebrow">Home</p>
-      <h1>Star Baby Blanket</h1>
-      <p class="lede">Worked from the center out in rounds of denim, sky, and buttermilk. Soft points, a bobble edge, and enough size to tuck around a lap or a crib.</p>
-      <p class="details">Cotton blend · star throw</p>
+      <h1>Highland Cow Coaster</h1>
+      <p class="lede">Not the stuffed cow — this one’s a table coaster. Light brown fringe, a cream muzzle, and little horns. Made to sit under a mug.</p>
+      <p class="details">Cotton coaster · home</p>
       <p class="muted">Made to order · inquire for a custom version</p>
       <div class="actions">
-        <a class="btn primary" href="/custom/?piece=star-blanket">Request this piece</a>
+        <a class="btn primary" href="/custom/?piece=cow-coaster">Request this piece</a>
         <a class="btn outline" href="/gallery/">Keep browsing</a>
       </div>
       <div class="neighbors">
@@ -64,7 +67,18 @@
     </div>
   </article>
 </main>
-
+<script>
+  const main = document.getElementById("main-photo");
+  document.querySelectorAll(".photo-thumb").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      main.src = btn.dataset.full;
+      document.querySelectorAll(".photo-thumb").forEach((b) => {
+        b.classList.toggle("active", b === btn);
+        b.setAttribute("aria-pressed", String(b === btn));
+      });
+    });
+  });
+</script>
   <footer class="site-footer">
   <div class="foot">
     <div class="foot-brand">
