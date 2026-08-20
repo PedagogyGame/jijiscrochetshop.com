@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Custom order · Jiji’s Crochet Shop</title>
-  <meta name="description" content="Request a custom amigurumi or blanket from Jiji. Yarn colors, size, who it’s for — the more you say, the closer the first stitch lands.">
+  <title>Hen and Chick · Jiji’s Crochet Shop</title>
+  <meta name="description" content="A rust-and-gold hen in a blue striped apron, with a tiny yellow chick at her side. Ready to ship.">
   <meta name="theme-color" content="#F3EBE0">
-  <link rel="canonical" href="https://jijiscrochetshop.com/custom/">
+  <link rel="canonical" href="https://jijiscrochetshop.com/gallery/hen-and-chick/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Custom order · Jiji’s Crochet Shop">
-  <meta property="og:description" content="Request a custom amigurumi or blanket from Jiji. Yarn colors, size, who it’s for — the more you say, the closer the first stitch lands.">
-  <meta property="og:url" content="https://jijiscrochetshop.com/custom/">
+  <meta property="og:title" content="Hen and Chick · Jiji’s Crochet Shop">
+  <meta property="og:description" content="A rust-and-gold hen in a blue striped apron, with a tiny yellow chick at her side. Ready to ship.">
+  <meta property="og:url" content="https://jijiscrochetshop.com/gallery/hen-and-chick/">
   <meta property="og:image" content="https://jijiscrochetshop.com/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Custom order · Jiji’s Crochet Shop">
-  <meta name="twitter:description" content="Request a custom amigurumi or blanket from Jiji. Yarn colors, size, who it’s for — the more you say, the closer the first stitch lands.">
+  <meta name="twitter:title" content="Hen and Chick · Jiji’s Crochet Shop">
+  <meta name="twitter:description" content="A rust-and-gold hen in a blue striped apron, with a tiny yellow chick at her side. Ready to ship.">
   <meta name="twitter:image" content="https://jijiscrochetshop.com/og.jpg">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/favicon.svg">
@@ -22,51 +22,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <script defer src="/custom.js"></script>
+  <meta property="og:image" content="https://jijiscrochetshop.com/images/hen-and-chick.jpg">
 </head>
 <body>
   <header class="site-header">
   <div class="bar">
     <a class="brand" href="/"><svg viewBox="0 0 32 32" class="mark" aria-hidden="true"><circle cx="16" cy="16.5" r="13" fill="currentColor"/><path d="M11 13.2c3.4 1.6 6.6 1.6 10 0M10.4 16.6c3.8 1.9 7.4 1.9 11.2 0M11.2 20c3.2 1.5 6.4 1.5 9.6 0" fill="none" stroke="#FBF6EE" stroke-width="1.7" stroke-linecap="round"/></svg><span>Jiji’s Crochet Shop</span></a>
     <nav class="nav" id="nav">
-      <a href="/gallery/" class="">Gallery</a>
+      <a href="/gallery/" class="active">Gallery</a>
       <a href="/about/" class="">About</a>
-      <a href="/custom/" class="active">Custom order</a>
+      <a href="/custom/" class="">Custom order</a>
     </nav>
     <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
       <span></span><span></span>
     </button>
   </div>
 </header>
-  <main class="wrap page prose">
-  <p class="eyebrow">Custom order</p>
-  <h1 id="custom-title">Tell Jiji what to make</h1>
-  <p class="lede">Yarn colors, size, who it’s for, a deadline if there is one — the more you say, the closer the first stitch lands.</p>
-  <div id="piece-chip" hidden></div>
-  <form id="custom-form" class="order-form">
-    <label>
-      <span>Your name</span>
-      <input type="text" name="name" autocomplete="name" required>
-    </label>
-    <label>
-      <span>Email</span>
-      <input type="email" name="email" autocomplete="email" required>
-    </label>
-    <label>
-      <span>Piece (optional)</span>
-      <select name="piece" id="piece-select">
-        <option value="">Open custom — not from the gallery</option>
-        <option value="ducky">Ducky</option><option value="highland-cow">Highland Cow</option><option value="blue-coaster">Blue Coaster</option><option value="yellow-coaster">Yellow Coaster</option><option value="hen-and-chick">Hen and Chick</option><option value="fox-friend">Fox Friend</option><option value="ballerina-bunny">Ballerina Bunny</option><option value="dragonfruit-dragon">Dragonfruit Dragon</option><option value="rainy-day-duck">Rainy Day Duck</option><option value="rainbow-dino">Rainbow Dino</option><option value="flower-crown-cow">Flower Crown Cow</option><option value="blossom-bunnies">Blossom Bunnies</option><option value="bumble-bee">Bumble Bee</option><option value="harvest-bunnies">Harvest Bunnies</option><option value="cow-coaster">Highland Cow Coaster</option><option value="ocean-friends">Ocean Friends</option><option value="farmhouse-hen">Farmhouse Hen</option><option value="hanging-sloth">Hanging Sloth</option><option value="happy-frog">Happy Frog</option>
-      </select>
-    </label>
-    <label>
-      <span>Your note</span>
-      <textarea name="note" required minlength="12" rows="7" placeholder="A fox like the one in the gallery, but in cream and rust, about 10 inches tall, for a birthday in October…"></textarea>
-    </label>
-    <button class="btn primary wide" type="submit">Send request</button>
-    <p class="muted">This opens your email to <a href="mailto:hello@jijiscrochetshop.com">hello@jijiscrochetshop.com</a>. If you’d rather write it yourself, that’s the address.</p>
-  </form>
+  <main class="wrap page">
+  <a class="back" href="/gallery/"><span aria-hidden="true">←</span> Back to gallery</a>
+  <article class="piece">
+    <div>
+      <figure class="piece-photo">
+        <img id="main-photo" src="/images/hen-and-chick.jpg" alt="Hen and Chick" fetchpriority="high">
+      </figure>
+      
+    </div>
+    <div>
+      <p class="eyebrow">Critters</p>
+      <h1>Hen and Chick</h1>
+      <p class="lede">Mama has a red comb and wattle, pink cheeks, and a white-and-blue kitchen apron. The chick is pocket-size — pale yellow with a matching blue stripe. A pair, packed and ready to go.</p>
+      <p class="details">Cotton amigurumi · set of two · ready to ship</p>
+      <p class="muted">In stock</p>
+      <div class="actions">
+        <a class="btn primary" href="/custom/?piece=hen-and-chick">Request this piece</a>
+        <a class="btn outline" href="/gallery/">Keep browsing</a>
+      </div>
+      <div class="neighbors">
+        <a href="/gallery/yellow-coaster/"><span aria-hidden="true">←</span> Yellow Coaster</a>
+        <a href="/gallery/fox-friend/">Fox Friend <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </article>
 </main>
+
   <footer class="site-footer">
   <div class="foot">
     <div class="foot-brand">
