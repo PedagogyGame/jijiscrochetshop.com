@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jijiscrochetshop.com/sitemap.xml

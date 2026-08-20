@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harvest Bunnies · Jiji’s Crochet Shop</title>
+  <meta name="description" content="Two pocket-size bunnies — one with an apple, one with a yarn ball.">
+  <meta name="theme-color" content="#F3EBE0">
+  <link rel="canonical" href="https://jijiscrochetshop.com/gallery/harvest-bunnies/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harvest Bunnies · Jiji’s Crochet Shop">
+  <meta property="og:description" content="Two pocket-size bunnies — one with an apple, one with a yarn ball.">
+  <meta property="og:url" content="https://jijiscrochetshop.com/gallery/harvest-bunnies/">
+  <meta property="og:image" content="https://jijiscrochetshop.com/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Harvest Bunnies · Jiji’s Crochet Shop">
+  <meta name="twitter:description" content="Two pocket-size bunnies — one with an apple, one with a yarn ball.">
+  <meta name="twitter:image" content="https://jijiscrochetshop.com/og.jpg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <meta property="og:image" content="https://jijiscrochetshop.com/images/harvest-bunnies.jpg">
+</head>
+<body>
+  <header class="site-header">
+  <div class="bar">
+    <a class="brand" href="/"><svg viewBox="0 0 32 32" class="mark" aria-hidden="true"><circle cx="16" cy="16.5" r="13" fill="currentColor"/><path d="M11 13.2c3.4 1.6 6.6 1.6 10 0M10.4 16.6c3.8 1.9 7.4 1.9 11.2 0M11.2 20c3.2 1.5 6.4 1.5 9.6 0" fill="none" stroke="#FBF6EE" stroke-width="1.7" stroke-linecap="round"/></svg><span>Jiji’s Crochet Shop</span></a>
+    <nav class="nav" id="nav">
+      <a href="/gallery/" class="active">Gallery</a>
+      <a href="/about/" class="">About</a>
+      <a href="/custom/" class="">Custom order</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+  <main class="wrap page">
+  <a class="back" href="/gallery/"><span aria-hidden="true">←</span> Back to gallery</a>
+  <article class="piece">
+    <figure class="piece-photo">
+      <img src="/images/harvest-bunnies.jpg" alt="Harvest Bunnies" fetchpriority="high">
+    </figure>
+    <div>
+      <p class="eyebrow">Critters</p>
+      <h1>Harvest Bunnies</h1>
+      <p class="lede">Floppy ears, pink noses, and snacks in their paws. A matching pair, or keep one and gift the other.</p>
+      <p class="details">Cotton amigurumi · set of two</p>
+      <p class="muted">Made to order · inquire for a custom version</p>
+      <div class="actions">
+        <a class="btn primary" href="/custom/?piece=harvest-bunnies">Request this piece</a>
+        <a class="btn outline" href="/gallery/">Keep browsing</a>
+      </div>
+      <div class="neighbors">
+        <a href="/gallery/bumble-bee/"><span aria-hidden="true">←</span> Bumble Bee</a>
+        <a href="/gallery/star-blanket/">Star Baby Blanket <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </article>
+</main>
+  <footer class="site-footer">
+  <div class="foot">
+    <div class="foot-brand">
+      <div class="brand"><svg viewBox="0 0 32 32" class="mark" aria-hidden="true"><circle cx="16" cy="16.5" r="13" fill="currentColor"/><path d="M11 13.2c3.4 1.6 6.6 1.6 10 0M10.4 16.6c3.8 1.9 7.4 1.9 11.2 0M11.2 20c3.2 1.5 6.4 1.5 9.6 0" fill="none" stroke="#FBF6EE" stroke-width="1.7" stroke-linecap="round"/></svg><span>Jiji’s Crochet Shop</span></div>
+      <p>Handmade amigurumi and custom crochet from Missouri. Every stitch is worked by Jiji — animals, blankets, and one-of-a-kind gifts.</p>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <p class="col-title">Visit</p>
+        <a href="/gallery/">Gallery</a>
+        <a href="/about/">About Jiji</a>
+        <a href="/custom/">Custom order</a>
+      </div>
+      <div>
+        <p class="col-title">Studio</p>
+        <p>Missouri, USA</p>
+        <p>Made to order</p>
+        <a href="mailto:hello@jijiscrochetshop.com">hello@jijiscrochetshop.com</a>
+      </div>
+    </div>
+  </div>
+  <p class="legal">© 2026 Jiji’s Crochet Shop. All pieces shown are handmade originals.</p>
+</footer>
+<script>
+  const btn = document.getElementById("menu-btn");
+  const nav = document.getElementById("nav");
+  if (btn && nav) {
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      btn.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", String(open));
+      btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+    nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      btn.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }));
+  }
+</script>
+</body>
+</html>
