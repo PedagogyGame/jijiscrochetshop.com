@@ -83,6 +83,7 @@ main { flex: 1; }
 @media (min-width: 1024px) { .grid-3 { grid-template-columns: 1fr 1fr 1fr; } }
 
 .card { display: block; text-decoration: none; color: inherit; }
+.card[hidden] { display: none !important; }
 .card.masonry-item, .masonry .card { margin-bottom: 0.75rem; break-inside: avoid; }
 @media (min-width: 1024px) { .masonry .card { margin-bottom: 1rem; } }
 .frame { overflow: hidden; border-radius: var(--radius); background: var(--paper); box-shadow: var(--shadow); transition: box-shadow .2s, transform .2s; }
