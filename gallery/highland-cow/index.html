@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flower Crown Cow · Jiji’s Crochet Shop</title>
-  <meta name="description" content="A speckled brown cow wearing a crown of tiny yarn blossoms.">
+  <title>Highland Cow · Jiji’s Crochet Shop</title>
+  <meta name="description" content="A shaggy golden highland cow with bangs down to her nose. Ready to ship.">
   <meta name="theme-color" content="#F3EBE0">
-  <link rel="canonical" href="https://jijiscrochetshop.com/gallery/flower-crown-cow/">
+  <link rel="canonical" href="https://jijiscrochetshop.com/gallery/highland-cow/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Flower Crown Cow · Jiji’s Crochet Shop">
-  <meta property="og:description" content="A speckled brown cow wearing a crown of tiny yarn blossoms.">
-  <meta property="og:url" content="https://jijiscrochetshop.com/gallery/flower-crown-cow/">
+  <meta property="og:title" content="Highland Cow · Jiji’s Crochet Shop">
+  <meta property="og:description" content="A shaggy golden highland cow with bangs down to her nose. Ready to ship.">
+  <meta property="og:url" content="https://jijiscrochetshop.com/gallery/highland-cow/">
   <meta property="og:image" content="https://jijiscrochetshop.com/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Flower Crown Cow · Jiji’s Crochet Shop">
-  <meta name="twitter:description" content="A speckled brown cow wearing a crown of tiny yarn blossoms.">
+  <meta name="twitter:title" content="Highland Cow · Jiji’s Crochet Shop">
+  <meta name="twitter:description" content="A shaggy golden highland cow with bangs down to her nose. Ready to ship.">
   <meta name="twitter:image" content="https://jijiscrochetshop.com/og.jpg">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/favicon.svg">
@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <meta property="og:image" content="https://jijiscrochetshop.com/images/flower-crown-cow.jpg">
+  <meta property="og:image" content="https://jijiscrochetshop.com/images/highland-cow.jpg">
 </head>
 <body>
   <header class="site-header">
@@ -43,28 +43,42 @@
   <article class="piece">
     <div>
       <figure class="piece-photo">
-        <img id="main-photo" src="/images/flower-crown-cow.jpg" alt="Flower Crown Cow" fetchpriority="high">
+        <img id="main-photo" src="/images/highland-cow.jpg" alt="Highland Cow" fetchpriority="high">
       </figure>
-      
+      <div class="photo-strip" role="tablist" aria-label="Photos of Highland Cow">
+        <button type="button" class="photo-thumb active" data-full="/images/highland-cow.jpg" aria-pressed="true"><img src="/images/thumbs/highland-cow.jpg" alt=""></button>
+        <button type="button" class="photo-thumb" data-full="/images/highland-cow-2.jpg" aria-pressed="false"><img src="/images/thumbs/highland-cow-2.jpg" alt=""></button>
+      </div>
     </div>
     <div>
       <p class="eyebrow">Critters</p>
-      <h1>Flower Crown Cow</h1>
-      <p class="lede">Cream muzzle, black hooves, and three flowers tucked between the horns. She sits like she’s waiting for a pasture picnic.</p>
-      <p class="details">Cotton amigurumi · seated</p>
-      <p class="muted">Made to order · inquire for a custom version</p>
+      <h1>Highland Cow</h1>
+      <p class="lede">Light brown and very hairy — the fringe almost hides her eyes. Little horns, a cream muzzle, and a round sit-down belly. Packed and ready to go.</p>
+      <p class="details">Cotton amigurumi · ready to ship</p>
+      <p class="muted">In stock</p>
       <div class="actions">
-        <a class="btn primary" href="/custom/?piece=flower-crown-cow">Request this piece</a>
-        <a class="btn outline" href="/gallery/">Keep browsing</a>
+        <a class="btn primary" href="https://www.paypal.com/ncp/payment/3PUM5B5VM2SCQ" target="_blank" rel="noopener noreferrer">Buy with PayPal</a>
+        <a class="btn outline" href="/custom/?piece=highland-cow">Ask about this piece</a>
       </div>
       <div class="neighbors">
-        <a href="/gallery/rainbow-dino/"><span aria-hidden="true">←</span> Rainbow Dino</a>
-        <a href="/gallery/blossom-bunnies/">Blossom Bunnies <span aria-hidden="true">→</span></a>
+        <a href="/gallery/ducky/"><span aria-hidden="true">←</span> Ducky</a>
+        <a href="/gallery/fox-friend/">Fox Friend <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </article>
 </main>
-
+<script>
+  const main = document.getElementById("main-photo");
+  document.querySelectorAll(".photo-thumb").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      main.src = btn.dataset.full;
+      document.querySelectorAll(".photo-thumb").forEach((b) => {
+        b.classList.toggle("active", b === btn);
+        b.setAttribute("aria-pressed", String(b === btn));
+      });
+    });
+  });
+</script>
   <footer class="site-footer">
   <div class="foot">
     <div class="foot-brand">
